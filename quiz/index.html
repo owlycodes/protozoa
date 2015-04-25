@@ -1,0 +1,334 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <link rel="icon" href="owly.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="owly.ico" type="image/x-icon"/>
+    <meta charset="utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="ICPA is Your..." name="description">
+<meta content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<meta content="Daryll Santos" name="author">
+<meta property="og:title" content="iCPA: Online Accounting Reviewer"/>
+<meta property="og:image" content="http://daryllsantos.com/icpa_redesign/images/owly.png"/>
+<meta property="og:url" content="http://icpa.ph"/>
+<meta property="og:site_name" content="iCPA"/>
+<meta property="og:type" content="blog"/>
+<meta name="twitter:card" content="photo">
+<meta name="twitter:url" content="http://icpa.ph">
+<meta name="twitter:title" content="iCPA: Online Accounting Reviewer">
+<meta name="twitter:description" content="iCPA is the onlne accounting reviewer to pass the Philippines' Bar Exams.">
+<meta name="twitter:image" content="http://daryllsantos.com/icpa_redesign/images/owly.png">
+<meta name="twitter:site" content="@icpa_ph">
+<meta name="twitter:creator" content="@icpa_ph">
+<meta name="twitter:image:width" content="2 00">
+<meta name="twitter:image:height" content="200">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Take Quiz</title>
+
+    <link href="../stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="../stylesheets/dashboard.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="../stylesheets/quiz.css" media="screen" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+    
+
+  </head>
+  <nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="../">iCPA</a>
+
+  </div>
+
+
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="../dashboard/">Dashboard</a> </li>
+</li>
+ </li>
+<li><a href="./">Quiz </a> </li>
+ </li>
+ </li>
+    </ul>
+
+    <form class="form-inline navbar-right sign-in-form" role="form">
+      <div class="form-group">
+        <label class="sr-only" for="exampleInputEmail2">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="exampleInputPassword2">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-success">Log In</button>
+        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Log In</span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Log In with Facebook</a></li>
+          <li><a href="#">Forgot Password</a></li>
+        </ul>
+      </div>
+    </form>
+  </div><!-- /.navbar-collapse -->
+</nav>
+
+  <body class="quiz quiz_index">
+    <div class="page">
+      <div class="main">
+      <div class="container">
+  <div class="row quiz-options">
+    <div class="col-md-9">
+      <div class="quiz-item-body">
+        <h3 class="quiz-number">Choose Quiz Options :)</h3>
+        <img class="text-center, centered" style="margin-bottom: 1em;" src="../images/quiz-selector.png" />
+        <div id="slider" style="width: 50%; margin: 0 auto;"></div>
+        <p>
+        <div class='centered'>
+          <label for="amount">Number of Items:</label>
+          <input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;">
+          <a class="btn btn-primary btn-large text-center start-quiz" href="">Start</a>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row quiz-take">
+    <div class="col-md-9">
+      <h1 class="quiz-number">Accounting Law</h1>
+    </div>
+    <div class="col-md-9">
+
+      <div class="quiz-item-body">
+        <h3 class="quiz-number">Question 1 <span class="pull-right reporter"> <a class="click-for-report" href="#">*</a></span></h3>
+          <p class="quiz-item-question">
+            Weng Company's cash account shows a balance of P4,500,000 before reconciliation. The bank statement does not include a deposit of P230,000 made on the last day of the month. The bank statement shows a collection by the bank of P94,000 and a customer's check for P32,000 was returned because it was NSF. A customer's check for P45,000 was recorded on the books as P54,000, and a check written for P7,900 was recorded as P9,700. What is the correct balance in the cash account? 
+          </p>
+
+          <label class="radio">
+            <input id="question1_0" name="question1" type="radio" value="0">
+            4,551,200<br>
+          </label>
+          <label class="radio">
+            <input id="question1_1" name="question1" type="radio" value="1">
+            4,554,800<br>
+          </label>
+          <label class="radio">
+            <input id="question1_2" name="question1" type="radio" value="2">
+            4,572,800<br>
+          </label>
+          <label class="radio">
+            <input id="question1_3" name="question1" type="radio" value="3">
+            4,784,800<br>
+          </label>
+
+        </div>
+      </div>
+      <div class="col-md-3 reported" id="report-question-1">
+        <h3 class="quiz-number">Report Question 1</h3>
+        <form method="post" action="/" accept-charset="UTF-8"><input name="authenticity_token" type="hidden" />
+          <div class="form-group">
+            <input class="form-control" placeholder="Subject" name="email_address" type="text" />
+          </div>
+          <div class="form-group">
+            <select>
+              <option>Grammar Error</option>
+              <option>Incomplete Question</option>
+              <option>Incorrect Answer</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Your Message" name="message" rows="" cols=""></textarea>
+          </div>
+          <a class="btn btn-success" href="#">Send Feedback to us :)</a>
+        </form>
+      </div>
+      <div class="col-md-9">
+        <div class="quiz-item-body">
+          <h3>Question 2</h3>
+
+
+          <p class="quiz-item-question">Myrna Co had the following balances at December 31, 2013:</p>
+          <table class="table table-condensed quiz-item-question-table">
+            <tr>
+              <td>Cash in Checking Account</td>
+              <td>35,000</td>
+            </tr>
+            <tr>
+              <td>Cash in Money Market Account</td>
+              <td>75,000</td>
+            </tr>
+            <tr>
+              <td>Treasury bills, purchased 1/1/12013, maturing 1/1/2014</td>
+              <td>350,000</td>
+            </tr>
+            <tr>
+              <td>Treasury bills, purchased 12/1/2013, maturing 3/31, 2014</td>
+              <td>35,000</td>
+            </tr>
+          </table>
+          <p>Myrna’s policy is to treat as cash equivalents all highly liquid investments with a maturity of 3 months or less when purchased. What amount should Myrna report as cash and cash equivalents in its December 31, 2013 balance sheet?</p>
+
+          <label class="radio">
+            <input id="question2_0" name="question2" type="radio" value="0">
+            110,000<br>
+          </label>
+          <label class="radio">
+            <input id="question2_1" name="question2" type="radio" value="1">
+            385,000<br>
+          </label>
+          <label class="radio">
+            <input id="question2_2" name="question2" type="radio" value="2">
+            460,000<br>
+          </label>
+          <label class="radio">
+            <input id="question2_3" name="question2" type="radio" value="3">
+            860,000<br>
+          </label>
+
+        </div>
+      </div>
+      <div class="col-md-3 reported">
+        <h3 class="quiz-number">Report Question 2</h3>
+        <form method="post" action="/" accept-charset="UTF-8"><input name="authenticity_token" type="hidden" />
+          <div class="form-group">
+            <input class="form-control" placeholder="Subject" name="email_address" type="text" />
+          </div>
+          <div class="form-group">
+            <select>
+              <option>Grammar Error</option>
+              <option>Incomplete Question</option>
+              <option>Incorrect Answer</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Your Message" name="message" rows="" cols=""></textarea>
+          </div>
+          <a class="btn btn-success" href="#">Send Feedback to us :)</a>
+        </form>
+      </div>
+
+      <div class="col-md-9">
+
+        <div class="quiz-item-body">
+          <h3>Question 5</h3>
+          <p class="quiz-item-question">
+            Daina Company provided the following information with respect to its cash and cash equivalents on December 31, 2013:</p>
+          <table class="table table-condensed quiz-item-question-table">
+            <tr>
+              <td>Checking account at First Bank</td>
+              <td>(200,000)</td>
+            </tr>
+            <tr>
+              <td>Checking account at Second Bank</td>
+              <td>3,500,000</td>
+            </tr>
+            <tr>
+              <td>Treasury Bonds</td>
+              <td>1,000,000</td>
+            </tr>
+            <tr>
+              <td>Payroll account</td>
+              <td>500,000</td>
+            </tr>
+          </table>
+          <p class="quiz-item-question">
+            What amount should be reported as unrestricted cash on December 31, 2013?</p>
+          <label class="radio">
+            <input id="question5_0" name="question5" type="radio" value="0">
+            5,900,000<br>
+          </label>
+          <label class="radio">
+            <input id="question5_1" name="question5" type="radio" value="1">
+            4,600,000<br>
+          </label>
+          <label class="radio">
+            <input id="question5_2" name="question5" type="radio" value="2">
+            4,900,000<br>
+          </label>
+          <label class="radio">
+            <input id="question5_3" name="question5" type="radio" value="3">
+            6,900,000<br>
+          </label>
+        </div>
+
+        <div class="answer">
+          <div class="spacer">
+            <a class="btn btn-primary btn-large text-center submit-quiz" href="">Submit Answers</a>
+            <a class="btn btn-danger btn-large text-center" href="#">Cancel Quiz</a>
+          </div>
+        </div>
+
+      </div> <!-- end col md 9 -->
+      <div class="col-md-12 congrats text-center">
+
+        <h1>Congratulations! You got 3 out of 3!</h1>
+        <img src="../images/owly.png" />
+        <h3>Owly is very happy for you. :)</h3>
+
+        <div class="post-actions">
+          <div class="spacer">
+            <a class="btn btn-primary btn-large text-center" href="#">Share the Awesome on Facebook</a>
+            <a class="btn btn-danger btn-large text-center" href="#">Take Another Quiz!</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-12 congrats text-center">
+
+        <h1>You only got 0 out of 3. :(</h1>
+        <img src="../images/owly.png" />
+        <h3>No matter, you'll get the next one!</h3>
+
+        <div class="post-actions">
+          <div class="spacer">
+            <a class="btn btn-danger btn-large text-center" href="#">Retake the Quiz!</a>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+        </div>
+      <footer class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+      <li><a href="#">iCPA</a> </li>
+      </li>
+      </li>
+      </li>
+
+    </ul>
+    <ul class="nav navbar-nav pull-right bottomer">
+      <li><a href="#">2013 by Quizmaster</a></li>
+
+    </ul>
+
+</footer>
+      <script src="../javascripts/all.js" type="text/javascript"></script>
+      
+    </div>
+  </body>
+</html>

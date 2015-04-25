@@ -1,0 +1,1 @@
+!function(){$(document).ready(function(){return $(".tippable").tooltip()})}.call(this);

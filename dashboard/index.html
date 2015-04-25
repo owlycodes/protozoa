@@ -1,0 +1,1527 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <link rel="icon" href="owly.ico" type="image/x-icon"/>
+<link rel="shortcut icon" href="owly.ico" type="image/x-icon"/>
+    <meta charset="utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+<meta content="ICPA is Your..." name="description">
+<meta content="width=device-width, minimum-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<meta content="Daryll Santos" name="author">
+<meta property="og:title" content="iCPA: Online Accounting Reviewer"/>
+<meta property="og:image" content="http://daryllsantos.com/icpa_redesign/images/owly.png"/>
+<meta property="og:url" content="http://icpa.ph"/>
+<meta property="og:site_name" content="iCPA"/>
+<meta property="og:type" content="blog"/>
+<meta name="twitter:card" content="photo">
+<meta name="twitter:url" content="http://icpa.ph">
+<meta name="twitter:title" content="iCPA: Online Accounting Reviewer">
+<meta name="twitter:description" content="iCPA is the onlne accounting reviewer to pass the Philippines' Bar Exams.">
+<meta name="twitter:image" content="http://daryllsantos.com/icpa_redesign/images/owly.png">
+<meta name="twitter:site" content="@icpa_ph">
+<meta name="twitter:creator" content="@icpa_ph">
+<meta name="twitter:image:width" content="2 00">
+<meta name="twitter:image:height" content="200">
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Dashboard</title>
+
+    <link href="../stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="../stylesheets/dashboard.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="../stylesheets/quiz.css" media="screen" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+    
+
+  </head>
+  <nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="../">iCPA</a>
+
+  </div>
+
+
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li><a href="./">Dashboard</a> </li>
+</li>
+ </li>
+<li><a href="../quiz/">Quiz </a> </li>
+ </li>
+ </li>
+    </ul>
+
+    <form class="form-inline navbar-right sign-in-form" role="form">
+      <div class="form-group">
+        <label class="sr-only" for="exampleInputEmail2">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="exampleInputPassword2">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-success">Log In</button>
+        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Log In</span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Log In with Facebook</a></li>
+          <li><a href="#">Forgot Password</a></li>
+        </ul>
+      </div>
+    </form>
+  </div><!-- /.navbar-collapse -->
+</nav>
+
+  <body class="dashboard dashboard_index">
+    <div class="page">
+      <div class="main">
+      <div class="container">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="row profile-person">
+        <div class="col-md-2 text-center left-thing">
+          <img class="img-circle img-profile" src="../images/testi_3.jpg" />
+            <div class="progress icpa-progress tippable" data-toggle="tooltip" title="Complete your profile to get the Completed badge!">
+              <div class="progress-bar icpa-shade" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 33%;">
+              </div>
+
+            </div>
+            <p class="tippable" data-toggle="tooltip" title="Add phone number to get to 40%">33% Complete</p>
+          </div>
+          <div class="col-md-8 contact-details">
+            <h3 style="margin-top: 0">Jenna Maurice Lee</h3>
+            <p><span class="university">4th Year, Ateneo de Naga University</span>
+              <span>+639161234567</span>
+              <span>jenna.lee@yahoo.com</span>
+            </p>
+
+            <p data-toggle="tooltip" title="Connect with FB chos" class="tippable inline">
+              <a href="#">Facebook: Not Yet Linked</a>
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-3 side-stuff">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="text-center icpa-box no-top" style="margin-bottom: 0;">Friends</h3>  
+            <img class="img-rounded img-friends" src="../images/testi_1.jpg" />
+              <img class="img-rounded img-friends" src="../images/testi_2.jpg" />
+                <img class="img-rounded img-friends" src="../images/testi_1.jpg" />
+                  <img class="img-rounded img-friends" src="../images/testi_2.jpg" />
+                    <img class="img-rounded img-friends" src="../images/testi_1.jpg" />
+                      <img class="img-rounded img-friends tippable" data-toggle="tooltip" title="Add friends" src="../images/add-friend.png" />
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="col-md-9">
+
+                    <div class="row dashboard-stuff">
+                      <div class="tabbable tabs-left">
+                        <ul class="nav nav-tabs col-md-2">
+                          <li><a href="#dashboard-scores" data-toggle="tab">My Scores</a></li>
+                          
+                          <li><a href="#dashboard-per-topic" data-toggle="tab">Per Topic</a></li>
+                          <li class="active"><a href="#leaderboard" data-toggle="tab">Leaderboard</a></li>
+                          <li><a href="#badges" data-toggle="tab">Badges</a></li>
+                        </ul>
+                        <div class="tab-content col-md-10">
+                          <div class="tab-pane active" id="dashboard-scores">
+  <div class="row">
+    <div class="col-md-12">
+      
+        <div class="dashboard-scores-subject">
+          <div class="score-overlay" id="score-1" data-score="40"></div>
+          <div class="score-stats">
+            <h3 class="subject">Auditing Problems
+              <span class="pull-right score tippable"
+                    data-toggle="tooltip" 
+                    title="Complete your profile to get the Completed badge!">
+                <a href="#">40%</a></span></h3>
+          </div>
+        </div>
+
+      
+        <div class="dashboard-scores-subject">
+          <div class="score-overlay" id="score-2" data-score="12"></div>
+          <div class="score-stats">
+            <h3 class="subject">Business Law
+              <span class="pull-right score tippable"
+                    data-toggle="tooltip" 
+                    title="Complete your profile to get the Completed badge!">
+                <a href="#">12%</a></span></h3>
+          </div>
+        </div>
+
+      
+        <div class="dashboard-scores-subject">
+          <div class="score-overlay" id="score-3" data-score="15"></div>
+          <div class="score-stats">
+            <h3 class="subject">Cost Accounting
+              <span class="pull-right score tippable"
+                    data-toggle="tooltip" 
+                    title="Complete your profile to get the Completed badge!">
+                <a href="#">15%</a></span></h3>
+          </div>
+        </div>
+
+      
+        <div class="dashboard-scores-subject">
+          <div class="score-overlay" id="score-4" data-score="50"></div>
+          <div class="score-stats">
+            <h3 class="subject">Practical Accounting 1
+              <span class="pull-right score tippable"
+                    data-toggle="tooltip" 
+                    title="Complete your profile to get the Completed badge!">
+                <a href="#">50%</a></span></h3>
+          </div>
+        </div>
+
+      
+        <div class="dashboard-scores-subject">
+          <div class="score-overlay" id="score-5" data-score="99"></div>
+          <div class="score-stats">
+            <h3 class="subject">Practical Accounting 2
+              <span class="pull-right score tippable"
+                    data-toggle="tooltip" 
+                    title="Complete your profile to get the Completed badge!">
+                <a href="#">99%</a></span></h3>
+          </div>
+        </div>
+
+      
+        <div class="dashboard-scores-subject">
+          <div class="score-overlay" id="score-6" data-score="92"></div>
+          <div class="score-stats">
+            <h3 class="subject">Theory of Accounts
+              <span class="pull-right score tippable"
+                    data-toggle="tooltip" 
+                    title="Complete your profile to get the Completed badge!">
+                <a href="#">92%</a></span></h3>
+          </div>
+        </div>
+
+      
+        <div class="dashboard-scores-subject">
+          <div class="score-overlay" id="score-7" data-score="78"></div>
+          <div class="score-stats">
+            <h3 class="subject">Management Advisory Services
+              <span class="pull-right score tippable"
+                    data-toggle="tooltip" 
+                    title="Complete your profile to get the Completed badge!">
+                <a href="#">78%</a></span></h3>
+          </div>
+        </div>
+
+      
+        <div class="dashboard-scores-subject">
+          <div class="score-overlay" id="score-8" data-score="34.5"></div>
+          <div class="score-stats">
+            <h3 class="subject">Microeconomics
+              <span class="pull-right score tippable"
+                    data-toggle="tooltip" 
+                    title="Complete your profile to get the Completed badge!">
+                <a href="#">34.5%</a></span></h3>
+          </div>
+        </div>
+
+      
+        <div class="dashboard-scores-subject">
+          <div class="score-overlay" id="score-9" data-score="12"></div>
+          <div class="score-stats">
+            <h3 class="subject">Macroeconomics
+              <span class="pull-right score tippable"
+                    data-toggle="tooltip" 
+                    title="Complete your profile to get the Completed badge!">
+                <a href="#">12%</a></span></h3>
+          </div>
+        </div>
+
+      
+
+    </div>
+  </div>
+</div>
+                          
+                          <div class="tab-pane" id="leaderboard">
+  <div class="row">
+    <div class="col-md-8">
+      <h3 class="icpa-box no-top text-center">Today's Highest</h3>  
+      <table class="table table-condensed">
+        <tbody>
+          <tr>
+            <td><a href="#">Daryll Pogi</a></td>
+            <td><span class="label label-default">9999</span></td>
+          </tr>
+          <tr>
+            <td>Phillip</td>
+            <td><span class="label label-default">9998</span></td>
+          </tr>
+          <tr>
+            <td>Bill Gates</td>
+            <td><span class="label label-default">60</span></td>
+          </tr>
+          <tr>
+            <td>Homies</td>
+            <td><span class="label  label-default">500</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-8">
+      <h3 class="icpa-box no-top text-center">All-Time Top Scores</h3>  
+      <table class="table table-condensed">
+        <tbody>
+          <tr>
+            <td><a href="#">Daryll Pogi</a></td>
+            <td><span class="label label-default">9999</span></td>
+          </tr>
+          <tr>
+            <td>Phillip</td>
+            <td><span class="label label-default">9998</span></td>
+          </tr>
+          <tr>
+            <td>Bill Gates</td>
+            <td><span class="label label-default">60</span></td>
+          </tr>
+          <tr>
+            <td>Homies</td>
+            <td><span class="label  label-default">500</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+                          <div class="tab-pane" id="dashboard-per-topic">
+  <div class="row">
+    <div class="col-md-12">
+      
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <td><h3 class='topic'>Auditing Problems</h3></td>
+              <td><p>Score</p></td>
+              <td><p>Progress</p></td>
+            </tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td>Accounts Receivable </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Audit of Current Liabilities </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Audit of Shareholders' Equity </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Bonds Payable </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Cash and Cash Equivalents </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Current Liabilities </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Depletion </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Deprecation </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Error Correction </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Income Tax </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Intangible Assets </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Inventory Valuation </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Liabilities </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Notes Payable </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Other Employee Benefits </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Property, Plant, and Equipment </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Provision and Contingent Liability </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Retained Earnings </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Shareholders' Equity </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Share Options </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Cash Flows </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Comprehensive Income </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Financial Position </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+          </tbody>
+        </table>
+      
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <td><h3 class='topic'>Business Law</h3></td>
+              <td><p>Score</p></td>
+              <td><p>Progress</p></td>
+            </tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td>Liabilities </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Notes Payable </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Other Employee Benefits </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Property, Plant, and Equipment </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Provision and Contingent Liability </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Retained Earnings </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Shareholders' Equity </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Share Options </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Cash Flows </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Comprehensive Income </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Financial Position </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+          </tbody>
+        </table>
+      
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <td><h3 class='topic'>Cost Accounting</h3></td>
+              <td><p>Score</p></td>
+              <td><p>Progress</p></td>
+            </tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td>Liabilities </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Notes Payable </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Other Employee Benefits </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Property, Plant, and Equipment </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Provision and Contingent Liability </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Retained Earnings </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Shareholders' Equity </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Share Options </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Cash Flows </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Comprehensive Income </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Financial Position </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+          </tbody>
+        </table>
+      
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <td><h3 class='topic'>Practical Accounting 1</h3></td>
+              <td><p>Score</p></td>
+              <td><p>Progress</p></td>
+            </tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td>Liabilities </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Notes Payable </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Other Employee Benefits </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Property, Plant, and Equipment </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Provision and Contingent Liability </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Retained Earnings </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Shareholders' Equity </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Share Options </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Cash Flows </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Comprehensive Income </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Financial Position </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+          </tbody>
+        </table>
+      
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <td><h3 class='topic'>Practical Accounting 2</h3></td>
+              <td><p>Score</p></td>
+              <td><p>Progress</p></td>
+            </tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td>Liabilities </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Notes Payable </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Other Employee Benefits </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Property, Plant, and Equipment </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Provision and Contingent Liability </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Retained Earnings </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Shareholders' Equity </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Share Options </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Cash Flows </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Comprehensive Income </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Financial Position </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+          </tbody>
+        </table>
+      
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <td><h3 class='topic'>Theory of Accounts</h3></td>
+              <td><p>Score</p></td>
+              <td><p>Progress</p></td>
+            </tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td>Accounts Receivable </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Audit of Current Liabilities </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Audit of Shareholders' Equity </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Provision and Contingent Liability </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Retained Earnings </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Shareholders' Equity </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Share Options </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Cash Flows </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Comprehensive Income </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Financial Position </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+          </tbody>
+        </table>
+      
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <td><h3 class='topic'>Management Advisory Services</h3></td>
+              <td><p>Score</p></td>
+              <td><p>Progress</p></td>
+            </tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td>Liabilities </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Notes Payable </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Other Employee Benefits </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Property, Plant, and Equipment </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Provision and Contingent Liability </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Retained Earnings </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Shareholders' Equity </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Share Options </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Cash Flows </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Comprehensive Income </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Financial Position </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+          </tbody>
+        </table>
+      
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <td><h3 class='topic'>Microeconomics</h3></td>
+              <td><p>Score</p></td>
+              <td><p>Progress</p></td>
+            </tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td>Liabilities </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Notes Payable </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Other Employee Benefits </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Property, Plant, and Equipment </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Provision and Contingent Liability </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Retained Earnings </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Shareholders' Equity </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Share Options </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Cash Flows </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Comprehensive Income </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Statement of Financial Position </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+          </tbody>
+        </table>
+      
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <td><h3 class='topic'>Macroeconomics</h3></td>
+              <td><p>Score</p></td>
+              <td><p>Progress</p></td>
+            </tr>
+          </thead>
+          <tbody>
+            
+              <tr>
+                <td>Unemployment </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Aggregate demand and business cycles </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Inflation </td>
+                
+                
+                  <td>10/10</td>
+                  <td><span class="label  label-success">Perfect</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Aggregate supply </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Open-economy macroeconomics </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Overview of macroeconomics </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Economic growth </td>
+                
+                
+                  <td>0/0  </td>
+                  <td><span class="label label-default">None</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Exchange rates </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Overview of economics </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+              <tr>
+                <td>Overview of economics </td>
+                
+                
+                  <td>3/6</td>
+                  <td><span class="label label-info">Okay</span></td>
+                
+              </tr>
+            
+          </tbody>
+        </table>
+      
+    </div>
+  </div>
+</div>
+                          <div class="tab-pane" id="badges">
+  <div class='row'>
+    <div class="col-md-4 badge-thingie blurred">
+      <div class='badge-inside'>
+        <img height="48" src="../images/badges/01.png" />
+        <p class='badge-title'>Going Social</p>
+        <p>Shared ICPA on Facebook</p>
+      </div>
+    </div>
+    <div class="col-md-4 badge-thingie blurred">
+      <div class='badge-inside'>
+        <img height="48" src="../images/badges/02.png" />
+        <p class='badge-title'>Going Social, Ulit</p>
+        <p>Invited friend to ICPA</p>
+      </div>
+    </div>
+    <div class="col-md-4 badge-thingie blurred">
+      <div class='badge-inside'>
+        <img height="48" src="../images/badges/03.png" />
+        <p class='badge-title'>Twitter Pag May Time</p>
+        <p>Followed ICPA Twitter</p>
+      </div>
+    </div>
+    <div class="col-md-4 badge-thingie">
+      <div class='badge-inside'>
+        <img height="48" src="../images/badges/04.png" />
+        <p class='badge-title'>5 Day Streak</p>
+        <p>5 Days Consecutive</p>
+      </div>
+    </div>
+    <div class="col-md-4 badge-thingie">
+      <div class='badge-inside'>
+        <img height="48" src="../images/badges/05.png" />
+        <p class='badge-title'>10 Day Streak</p>
+        <p>5 Days Consecutive</p>
+      </div>
+    </div>
+    <div class="col-md-4 badge-thingie">
+      <div class='badge-inside'>
+        <img height="48" src="../images/badges/06.png" />
+        <p class='badge-title'>1 Month Baby</p>
+        <p>28 Days Consecutive</p>
+      </div>
+    </div>
+    <div class="col-md-4 badge-thingie">
+      <div class='badge-inside'>
+        <img height="48" src="../images/badges/07.png" />
+        <p class='badge-title'>5 Day Streak</p>
+        <p>5 Days Consecutive</p>
+      </div>
+    </div>
+    <div class="col-md-4 badge-thingie">
+      <div class='badge-inside'>
+        <img height="48" src="../images/badges/08.png" />
+        <p class='badge-title'>10 Day Streak</p>
+        <p>5 Days Consecutive</p>
+      </div>
+    </div>
+    <div class="col-md-4 badge-thingie">
+      <div class='badge-inside'>
+        <img height="48" src="../images/badges/09.png" />
+        <p class='badge-title'>1 Month Baby</p>
+        <p>28 Days Consecutive</p>
+      </div>
+    </div>
+  </div>
+</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3 side-stuff">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <h3 class="text-center">Let's talk! :)</h3>  
+                        <form class="signup-form" method="post" action="/" accept-charset="UTF-8"><input name="authenticity_token" type="hidden" />
+                          <div class="form-group">
+                            <input class="form-control" placeholder="Subject" name="email_address" type="text" />
+                          </div>
+                          <div class="form-group">
+                            <textarea class="form-control" placeholder="Your Message" name="message" rows="" cols=""></textarea>
+                          </div>
+                          <a class="btn btn-success btn-lg" href="#">Send Feedback to us :)</a>
+                        </form>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div> <!-- end container -->
+        </div>
+      <footer class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+      <li><a href="#">iCPA</a> </li>
+      </li>
+      </li>
+      </li>
+
+    </ul>
+    <ul class="nav navbar-nav pull-right bottomer">
+      <li><a href="#">2013 by Quizmaster</a></li>
+
+    </ul>
+
+</footer>
+      <script src="../javascripts/all.js" type="text/javascript"></script>
+      
+    </div>
+  </body>
+</html>

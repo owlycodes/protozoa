@@ -1,0 +1,1 @@
+$(document).ready(function(){return $(".score-overlay").each(function(){return $(this).animate({width:$(this).attr("data-score")+"%"},1e3)}),$(".tippable").tooltip()});

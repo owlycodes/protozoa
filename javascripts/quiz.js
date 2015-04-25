@@ -1,0 +1,1 @@
+$(function(){return $("#slider").slider({value:5,min:5,max:15,step:1,slide:function(i,n){return $("#amount").val(n.value)}}),$("#amount").val($("#slider").slider("value")),$(".start-quiz").on("click",function(){return $(".quiz-options").hide(),$(".quiz-take").show(),!1}),$(".submit-quiz").on("click",function(){return $(".congrats").show(),!1})});
