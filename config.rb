@@ -55,10 +55,10 @@ set :images_dir, 'images'
 configure :build do
   # For example, change the Compass output style for deployment
   activate :minify_css
-  
+
   # To have /page urls instead of page.html
   activate :directory_indexes
-  
+
   # For link_to functions
   set :relative_links, true
 
@@ -73,12 +73,4 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
-end
-
-activate :deploy do |deploy|
-  deploy.method   = :ftp
-  deploy.host     = "ftp.daryllsantos.com"
-  deploy.path     = "/icpar"
-  deploy.user     = "daryll@daryllsantos.com"
-  deploy.password = ENV["PASSWORD"]
 end
