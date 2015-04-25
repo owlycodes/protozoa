@@ -25,31 +25,27 @@ title: iCPA Your Accounting Study Buddy.
     <div class="col-md-8">
       <h1>Paul Santos <span class="pull-right"><button class="btn btn-sm">Print Resume in PDF</button></span></h1>
       <p data-toggle="tooltip" title="Fill in Your Address" class="tippable">
-        <p><%= data.resume.address %></p>
-        <p><%= data.resume.email %></p>
-        <p><%= data.resume.mobile %></p>
+        <p class="editable"><%= data.resume.address %></p>
+        <p class="editable"><%= data.resume.email %></p>
+        <p class="editable"><%= data.resume.mobile %></p>
 
         <h2>Education</h2>
-        <p class="lead"><%= data.resume.university %><span class="pull-right">Class of <%= data.resume.university_graduation %></span></p>
-        <p><%= data.resume.university_text %></p>
-        <p class="lead"><%= data.resume.secondary %><span class="pull-right">Class of <%= data.resume.secondary_graduation %></span></p>
+        <p class="editable lead"><%= data.resume.university %><span class="pull-right">Class of <%= data.resume.university_graduation %></span></p>
+        <p class="editable-ta"><%= data.resume.university_text %></p>
+        <p class="editable lead"><%= data.resume.secondary %><span class="pull-right">Class of <%= data.resume.secondary_graduation %></span></p>
         <hr/>
         <h2>Experience</h2>
-        <p class="lead">ICPA PH<span class="pull-right">July 2013-December 2013</span></p>
-        <ul>
-          <li>Bacon ipsum dolor sit amet doner frankfurter salami, kielbasa pig ham hock prosciutto biltong bresaola jowl short loin sirloin. Drumstick turkey kevin, strip steak swine ham hock ball tip meatball boudin.</li>
-          <li>Bacon ipsum dolor sit amet doner frankfurter salami, kielbasa pig ham hock prosciutto biltong bresaola jowl short loin sirloin. Drumstick turkey kevin, strip steak swine ham hock ball tip meatball boudin.</li>
-        </ul>
+        <p class="editable lead">ICPA PH<span class="pull-right">July 2013-December 2013</span></p>
+        <p class="editable-ta">Bacon ipsum dolor sit amet doner frankfurter salami, kielbasa pig ham hock prosciutto biltong bresaola jowl short loin sirloin. Drumstick turkey kevin, strip steak swine ham hock ball tip meatball boudin.</p>
         <hr/>
         <h2>Organizations</h2>
-        <p class="lead">JPIA UP Diliman Chapter<span class="pull-right">July 2013-December 2014</span></p>
-        <p>As the president, I'm the boss.</p>
+        <p class="editable lead">JPIA UP Diliman Chapter<span class="pull-right">July 2013-December 2014</span></p>
+        <p class="editable-ta">As the president, I'm the boss.</p>
         <hr/>
         <h2>Character References</h2>
-        <p class="lead"><%= data.resume.primary_reference %><span class="pull-right"><%= data.resume.primary_reference_description %></span></p>
-        <p><%= data.resume.primary_reference_email %></p>
-        <p><%= data.resume.primary_reference_mobile %></p>
-
+        <p class="editable lead"><%= data.resume.primary_reference %><span class="pull-right"><%= data.resume.primary_reference_description %></span></p>
+        <p class="editable"><%= data.resume.primary_reference_email %></p>
+        <p class="editable"><%= data.resume.primary_reference_mobile %></p>
       </div>
     </div>
   </div>
