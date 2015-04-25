@@ -1,0 +1,64 @@
+@import "partials/mixins";
+@import "partials/variables";
+
+.quiz-options{
+    
+}
+
+
+.quiz-take{
+    display: none;
+}
+
+
+
+.quiz-item-body{
+    border: 1px solid #ccc;
+    @include gradient-vertical(#FFF, #EEE);
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.quiz-number{
+    margin-top: 0;
+}
+
+.quiz-item-question-table{
+    background-color: white;
+    margin-left: 2em;
+    max-width: 80%;
+    
+    td{
+        font-family: $font-family-serif;
+        font-weight:600;
+    }
+}
+
+.reported{
+    border: 1px solid #ccc;
+    display: none;
+    padding: 1em;
+    position: relative;
+}
+
+/*.reported:before{
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    @include gradient-vertical(#FFF, #EEE);
+    height: 20px;
+    width: 16px;
+    content: "";
+    position: absolute;
+    left: -16px;
+}*/
+
+.spacer{
+    margin: 0 auto 1em;
+    /*width: 35%;*/
+}
+
+.congrats{
+    border: 1px solid #ccc;
+    display: none;
+    margin-bottom: 1em;
+}

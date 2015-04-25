@@ -1,0 +1,52 @@
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans);*/
+@import "partials/mixins";
+@import "partials/variables";
+@import "partials/navbar";
+@import "partials/urgent-message";
+@import "index";
+
+@import "bootstrap";
+
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.main{
+    padding-bottom: 100px;
+}
+
+.page{
+    min-height: 100%;
+    position: relative;
+}
+
+footer{
+    position: absolute !important;
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+}
+
+body{
+    background-image: url('../images/back.png');
+}
+
+footer{
+    position: absolute !important;
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+}
+
+footer.navbar{
+    margin: 2em 0 0 0;
+    border-top: 1px #ccc solid;
+    a{
+        color: $navbar-default-link-color;
+    }
+}
+
+
+

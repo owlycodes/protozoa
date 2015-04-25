@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <%= partial 'partials/favicon' %>
+    <%= partial 'partials/meta' %>
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "The Middleman" %></title>
+
+    <%= stylesheet_link_tag "application", "dashboard", "quiz" %>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"/>
+    <%= auto_stylesheet_link_tag %>
+
+  </head>
+  <%= partial 'partials/header' %>
+
+  <body class="<%= page_classes %>">
+    <div class="page">
+      <div class="main">
+      <%= yield %>
+        </div>
+      <%= partial 'partials/footer' %>
+      <%= javascript_include_tag "all" %>
+<%#= javascript_include_tag  "index", "dashboard", "resume" %>
+      <%=  auto_javascript_include_tag %>
+    </div>
+  </body>
+</html>
